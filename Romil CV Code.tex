@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author: Romil Patel
+% Based off of: https://github.com/Romilpatel87/Resume-Code
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+%----------FONT OPTIONS----------
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\   
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Romil Patel} \\ \vspace{1pt}
+    Edison, New Jersey \\ \vspace{1pt}
+    \vspace{8pt}
+    \small \href{tel:+1 (551) 274-1601}{ \raisebox{-0.1\height}\faPhone\ \underline{+1 (551) 274-1601} ~} \href{mailto:romilpatel8july@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{romilpatel8july@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/romilpatel87/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin/romilpatel87}}  ~
+    \href{https://github.com/Romilpatel87?tab=repositories}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Romilpatel87}} ~
+    \vspace{6pt}
+\end{center}
+%-----------EDUCATION-----------
+\section{EDUCATION}
+%  \resumeSubHeadingListStart
+%    \resumeSubheading
+%      {New Jersey Institute of Technology}{AUG 2024 -- MAY 2026}
+%      {M.S. in Data Science}{Newark, NJ}
+%  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers University - New Brunswick}{AUG 2020 -- MAY 2024}
+      {B.S. in Computer Science and Data Science - {GPA} - {3.4}}{New Brunswick, NJ}
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+%------RELEVANT COURSEWORK-------
+\section{RELEVANT COURSEWORK}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=5pt]
+                \item\small Data Structures
+                \item Intro Data Science
+                \item Software Methodology
+                \item Database Management
+                \item Regression Methods
+                \item Data 101
+                \item Algorithms Analysis
+                \item Inference Data Science
+                \item Internet Technology
+                \item Deep Learning
+                \item Computer Architecture
+                \item D.S Capstone Project
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+\vspace{6pt}
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Amazon}{May 2022 -- Present} 
+      {\underline{Process Assistant}}{Edison, NJ}
+      \vspace{1pt}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Monitored and analyzed workflow efficiency using proprietary software on a company-issued laptop to ensure daily production goals were met and exceeded}}
+        \resumeItem{\normalsize{Tracked and reported performance metrics for associates, using data-driven insights to improve productivity and operational outcomes}}
+        \resumeItem{\normalsize{Managed shift operations by coordinating with Area Managers and suppliers to resolve issues, meet deadlines, and maintain seamless production}}
+        \resumeItem{\normalsize{Ensured workplace safety compliance by conducting regular audits, addressing hazards, and fostering a safe work environment}}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Somshay LLC}{January 2022 -- May 2022} 
+      {\underline{IT Intern}}{Edison, NJ}
+      \vspace{1pt}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Analyzed large datasets to identify trends and insights that informed automation of talent placement and optimized matching algorithms}}
+        \resumeItem{\normalsize{Utilized data visualization techniques to present actionable insights to stakeholders, improving efficiency of talent sourcing and placement}}
+        \resumeItem{\normalsize{Contributed to design and implementations of data pipelines that supported real-time analytics and reporting for client projects}}
+        \resumeItem{\normalsize{Developed and maintained data-driven analytics tools to enhance global talent sourcing strategies and decision-making processes}}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\href{https://github.com/Romilpatel87/Minesweeper}{\textbf{\large{\underline{Minesweeper Neural Network Bot}}}} $|$ \large{\textit{Python, Neural Networks, GANs}}}{April 2024}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed and trained neural network-based Minesweeper bots for traditional and variable-sized boards, including using CNNs and GANs for board generation}}
+            \resumeItem{\normalsize{Implemented and compared performance of neural network bots against traditional logic-based bots in terms of board-clearing probability, average steps before hitting a mine, and mines triggered}}
+            \resumeItem{\normalsize{Documented project extensively with detailed explanations of model structures, data handling, training procedures, and performance evaluations}}
+          \resumeItemListEnd
+          \vspace{-10pt}
+          
+          \resumeProjectHeading
+          {\href{https://github.com/Romilpatel87/BuyMe_AuctionServices}{\textbf{\large{\underline{Buy Me}}} } $|$ \large{\textit{MySQL, Java, JSP, HTML, CSS}}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed an online platform for users to interact with customer service directly from their accounts}}
+            \resumeItem{\normalsize{Implemented functionalities for users to ask questions and for customer service to respond, manage bids, and edit user information}}
+            \resumeItem{\normalsize{Integrated real-time notifications to enhance communication efficiency and responsiveness}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS \& CERTIFICATES}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming:}}{ \normalsize{Python, R, Java, HTML/CSS, SQL, C}}\\
+     \textbf{\normalsize{Developer Tools and Platforms:}}{ \normalsize{VS Code, Jupyter Notebook, R Studio, MySQL Workbench, Microsoft Power Platform, Visual Studio, Eclipse, Docker, Google Cloud Platform, Microsoft Azure}} \\
+     \textbf{\normalsize{Database:}}{ \normalsize{Oracle Database, AWS, MySQL, PostgreSQL, MongoDB}}\\
+     \textbf{\normalsize{Systems:}}{\normalsize{Windows, osX, Linux}} \\
+     \textbf{\normalsize{Certificates:}}{\normalsize{Python Course - HackerRank, AWS: Cloud Practitioner, IBM Data Science Professional Certificate}} \\
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+\end{document}
