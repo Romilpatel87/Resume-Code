@@ -17,6 +17,17 @@
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue!50!black,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    pdfnewwindow=true
+}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -104,7 +115,8 @@
     {\Huge \scshape Romil Patel} \\ \vspace{1pt}
     Edison, New Jersey \\ \vspace{1pt}
     \vspace{8pt}
-    \small \href{tel:+1 (551) 274-1601}{ \raisebox{-0.1\height}\faPhone\ \underline{+1 (551) 274-1601} ~} \href{mailto:romilpatel8july@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{romilpatel8july@gmail.com}} ~ 
+    \small \href{tel:+1 (551) 274-1601}{ \raisebox{-0.1\height}\faPhone\ \underline{+1 (551) 274-1601} ~} 
+    \href{mailto:romilpatel8july@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{romilpatel8july@gmail.com}} ~ 
     \href{https://www.linkedin.com/in/romilpatel87/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{linkedin/romilpatel87}}  ~
     \href{https://github.com/Romilpatel87?tab=repositories}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Romilpatel87}} ~
     \vspace{6pt}
@@ -123,45 +135,46 @@
       {B.S. in Computer Science and Data Science - {GPA} - {3.4}}{New Brunswick, NJ}
   \resumeSubHeadingListEnd
 \vspace{-8pt}
-%------RELEVANT COURSEWORK-------
-\section{RELEVANT COURSEWORK}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{4}
-            \begin{itemize}[itemsep=-5pt, parsep=5pt]
-                \item\small Data Structures
-                \item Intro Data Science
-                \item Software Methodology
-                \item Database Management
-                \item Regression Methods
-                \item Data 101
-                \item Algorithms Analysis
-                \item Inference Data Science
-                \item Internet Technology
-                \item Deep Learning
-                \item Computer Architecture
-                \item D.S Capstone Project
-            \end{itemize}
-        \end{multicols}
-        \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-\vspace{6pt}
+% %------RELEVANT COURSEWORK-------
+% \section{RELEVANT COURSEWORK}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=5pt]
+%                 \item\small Data Structures
+%                 \item Intro Data Science
+%                 \item Software Methodology
+%                 \item Database Management
+%                 \item Regression Methods
+%                 \item Data 101
+%                 \item Algorithms Analysis
+%                 \item Inference Data Science
+%                 \item Internet Technology
+%                 \item Deep Learning
+%                 \item Computer Architecture
+%                 \item D.S Capstone Project
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+% \vspace{6pt}
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
       \resumeSubheading
-      {Amazon}{May 2022 -- Present} 
-      {\underline{Process Assistant}}{Edison, NJ}
+      {Medspekto}{March 2025 -- Present} 
+      {\underline{Healthcare Data Engineer}}{New York, NY}
       \vspace{1pt}
       \resumeItemListStart
-        \resumeItem{\normalsize{Monitored and analyzed workflow efficiency using proprietary software on a company-issued laptop to ensure daily production goals were met and exceeded}}
-        \resumeItem{\normalsize{Tracked and reported performance metrics for associates, using data-driven insights to improve productivity and operational outcomes}}
-        \resumeItem{\normalsize{Managed shift operations by coordinating with Area Managers and suppliers to resolve issues, meet deadlines, and maintain seamless production}}
-        \resumeItem{\normalsize{Ensured workplace safety compliance by conducting regular audits, addressing hazards, and fostering a safe work environment}}
+        \resumeItem{\normalsize{Built and deployed AWS Lambda functions integrated with API Gateway, RDS (PostgreSQL), and Cognito, powering HIPAA-compliant healthcare APIs.}}
+        \resumeItem{\normalsize{Developed AuthMint (AI-driven prior authorization) and CoverMint (benefits verification) using real-time data from Availity and OptumRx APIs.}}
+        \resumeItem{\normalsize{Created secure, scalable API endpoints and tested them using Postman, supporting patient insurance lookup, claims processing, and authorization workflows.}}
+        \resumeItem{\normalsize{Engineered fraud detection logic in GuardMint using Python and SQL to identify anomalies in Medicare/Medicaid claims data.}}
+        \resumeItem{\normalsize{Designed the MintCore data platform and MintSight targeting engine to unify product pipelines, improve data quality, and support machine learning.}}
       \resumeItemListEnd
       
       \resumeSubheading
       {Somshay LLC}{January 2022 -- May 2022} 
-      {\underline{IT Intern}}{Edison, NJ}
+      {\underline{Data Analyst Intern}}{Edison, NJ}
       \vspace{1pt}
       \resumeItemListStart
         \resumeItem{\normalsize{Analyzed large datasets to identify trends and insights that informed automation of talent placement and optimized matching algorithms}}
